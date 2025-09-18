@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Select2</title>
+    <!-- 1. Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- 2. Incluye el CSS de Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- 3. Incluye el JS de Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+    
+    <h1>Ejemplo de Select2</h1>
+    <!-- 4. Tu elemento select -->
+    <select class="js-example-basic-single" style="width: 50%;">
+        <option value=""></option>
+        <option value="AL">Alabama</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="FL">Florida</option>
+    </select>
+
+    <!-- 5. Tu script de inicialización -->
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+
+</body>
+</html>
